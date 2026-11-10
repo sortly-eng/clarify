@@ -17,5 +17,21 @@
     "features",
     "questions"
   ],
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clarify",
+    "shortDescription": "Ask scored clarifying questions before building a feature or fixing a bug.",
+    "longDescription": "Clarify adds two skills, feature and bug. Each reads your designs, specs and code first, then asks 3 to 10 questions one at a time, showing a confidence meter before every question. It stops at 80% confidence, writes a brief (scope, UI states, data, files to change, acceptance criteria or repro steps and a fix plan), and waits for your approval before any code changes.",
+    "developerName": "Sortly",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "websiteURL": "https://github.com/sortly-eng/clarify",
+    "defaultPrompt": [
+      "Use Clarify to plan a new settings page from this design.",
+      "Use Clarify to pin down why the checkout button does nothing on Safari."
+    ],
+    "brandColor": "#34D399",
+    "composerIcon": "./.claude-plugin/icon.png",
+    "logo": "./.claude-plugin/icon.png"
+  }
 }
