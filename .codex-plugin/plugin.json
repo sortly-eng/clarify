@@ -1,11 +1,10 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "clarify",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ask 3–10 scored questions with a confidence meter before building a feature or fixing a bug.",
   "author": {
-    "name": "sortly-sanath",
-    "url": "https://github.com/sortly-sanath"
+    "name": "Sortly",
+    "url": "https://github.com/sortly-eng"
   },
   "homepage": "https://github.com/sortly-eng/clarify",
   "repository": "https://github.com/sortly-eng/clarify",
@@ -19,19 +18,34 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Clarify",
-    "shortDescription": "Ask scored clarifying questions before building a feature or fixing a bug.",
-    "longDescription": "Clarify adds two skills, feature and bug. Each reads your designs, specs and code first, then asks 3 to 10 questions one at a time, showing a confidence meter before every question. It stops at 80% confidence, writes a brief (scope, UI states, data, files to change, acceptance criteria or repro steps and a fix plan), and waits for your approval before any code changes.",
+    "displayName": "Clarify by Sortly",
+    "shortDescription": "Plan features and bug fixes",
+    "longDescription": "Clarify helps software teams turn a feature idea or bug report into a brief before editing code. It reviews the designs, specs, evidence, and code you provide or make available, then asks 3–10 questions one at a time. A weighted completeness meter shows which details are clear and which need more input; it is not a probability that a plan or fix is correct. Feature briefs cover scope, UI, data, and acceptance criteria. Bug briefs cover reproduction steps, a proposed fix, and verification. Clarify asks for approval before implementation. Available context and tools depend on the host application; the plugin does not include an MCP server or a connection to Sortly inventory data.",
     "developerName": "Sortly",
-    "category": "Productivity",
-    "capabilities": ["Read"],
+    "category": "Developer Tools",
+    "capabilities": [
+      "Draft feature briefs with scope and acceptance criteria",
+      "Draft bug briefs with reproduction steps and verification",
+      "Track requirement completeness with weighted scores"
+    ],
     "websiteURL": "https://github.com/sortly-eng/clarify",
+    "supportURL": "https://github.com/sortly-eng/clarify/blob/main/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/sortly-eng/clarify/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/sortly-eng/clarify/blob/main/TERMS.md",
     "defaultPrompt": [
       "Use Clarify to plan a new settings page from this design.",
       "Use Clarify to pin down why the checkout button does nothing on Safari."
     ],
-    "brandColor": "#34D399",
-    "composerIcon": "./.claude-plugin/icon.png",
-    "logo": "./.claude-plugin/icon.png"
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "brandColor": "#047857",
+    "brandColorDark": "#34D399"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Added listing metadata, support, privacy policy, terms of use, and packaged icons. Corrected weighted confidence examples and documented score rendering."
+      }
+    }
   }
 }

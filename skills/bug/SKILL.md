@@ -33,7 +33,7 @@ Rate each dimension `✗` unknown (0), `◐` partial (0.5) or `✓` clear (1).
 | Location     | 10     | the files or modules most likely at fault                     |
 | Fix scope    | 5      | what must not change, and how the fix will be verified        |
 
-Confidence = sum of (score × weight). It is out of 100.
+Confidence = sum of (score × weight). It is out of 100. Keep fractional values (for example, 57.5%) instead of rounding the numeric score. This measures how complete the available requirements are, not the probability that a plan or fix is correct.
 
 ## 3. Ask questions
 
@@ -48,11 +48,11 @@ Rules:
 Start every question with the meter:
 
 ```
-Confidence  █████░░░░░  50%   ·  Question 3 of max 10
+Confidence  █████░░░░░  52.5%   ·  Question 3 of max 10
 Symptom ✓  Expected ✓  Repro ◐  Env ✗  Evidence ◐  Regression ✗  Location ◐  Scope ✗
 ```
 
-The bar has 10 blocks, one per 10%.
+The bar has 10 blocks. Fill `floor(confidence / 10)` blocks and leave the rest empty; the numeric percentage shows the exact score.
 
 ## 4. Write the brief
 

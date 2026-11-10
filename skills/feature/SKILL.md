@@ -33,7 +33,7 @@ Rate each dimension `✗` unknown (0), `◐` partial (0.5) or `✓` clear (1).
 | Placement      | 10     | which files or modules it lives in, and what it reuses       |
 | Done when      | 10     | acceptance criteria and how it will be tested                |
 
-Confidence = sum of (score × weight). It is out of 100.
+Confidence = sum of (score × weight). It is out of 100. Keep fractional values (for example, 57.5%) instead of rounding the numeric score. This measures how complete the available requirements are, not the probability that a plan or fix is correct.
 
 ## 3. Ask questions
 
@@ -48,11 +48,11 @@ Rules:
 Start every question with the meter:
 
 ```
-Confidence  ██████░░░░  62%   ·  Question 4 of max 10
+Confidence  █████░░░░░  57.5%   ·  Question 4 of max 10
 Goal ✓  Scope ✓  UI ◐  Data ✗  States ◐  Edge ✗  Placement ✓  Done ◐
 ```
 
-The bar has 10 blocks, one per 10%.
+The bar has 10 blocks. Fill `floor(confidence / 10)` blocks and leave the rest empty; the numeric percentage shows the exact score.
 
 ## 4. Write the brief
 
