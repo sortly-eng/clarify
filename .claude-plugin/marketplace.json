@@ -1,6 +1,7 @@
 {
   "name": "clarify-marketplace",
-  "owner": { "name": "Sanath" },
+  "owner": { "name": "sortly-sanath" },
+  "description": "Scored clarifying questions before building a feature or fixing a bug.",
   "plugins": [
     {
       "name": "clarify",

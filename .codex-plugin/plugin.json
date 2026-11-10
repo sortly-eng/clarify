@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "clarify",
+  "version": "0.2.0",
+  "description": "Ask 3–10 scored questions with a confidence meter before building a feature or fixing a bug.",
+  "author": {
+    "name": "sortly-sanath",
+    "url": "https://github.com/sortly-sanath"
+  },
+  "homepage": "https://github.com/sortly-eng/clarify",
+  "repository": "https://github.com/sortly-eng/clarify",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "requirements",
+    "bugs",
+    "features",
+    "questions"
+  ],
+  "skills": "./skills/"
+}

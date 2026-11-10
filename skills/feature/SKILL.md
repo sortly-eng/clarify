@@ -1,13 +1,11 @@
 ---
-description: Clarify a feature through scored questions before writing any code
-argument-hint: <what you want to build, plus links to designs or specs>
+name: feature
+description: Use when the user wants to build a new feature from an idea, designs or a spec. Asks 3–10 scored clarifying questions with a confidence meter, then writes a feature brief before any code.
 ---
 
 # Feature intake
 
-The user wants to build:
-
-$ARGUMENTS
+The feature to build is whatever the user described when invoking this skill, along with any designs, specs or links they attached. If they gave nothing, ask what they want to build first.
 
 Do not write or change any code until the brief at the end is approved.
 

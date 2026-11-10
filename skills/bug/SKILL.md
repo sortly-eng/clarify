@@ -1,13 +1,11 @@
 ---
-description: Pin down a bug through scored questions before changing any code
-argument-hint: <what is broken, plus screenshots, logs or a link to the ticket>
+name: bug
+description: Use when the user reports a bug to fix. Asks 3–10 scored clarifying questions with a confidence meter, then writes a bug brief with repro steps and a fix plan before any code changes.
 ---
 
 # Bug intake
 
-The user reports:
-
-$ARGUMENTS
+The bug is whatever the user described when invoking this skill, along with any screenshots, logs, stack traces or ticket links they attached. If they gave nothing, ask what is broken first.
 
 Do not change any code until the brief at the end is approved.
 
