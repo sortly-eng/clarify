@@ -1,0 +1,5 @@
+{
+  "name": "clarify",
+  "description": "Ask 3–10 scored questions with a confidence meter before building a feature or fixing a bug.",
+  "version": "0.1.0"
+}

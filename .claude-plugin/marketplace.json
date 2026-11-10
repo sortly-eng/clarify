@@ -1,0 +1,11 @@
+{
+  "name": "clarify-marketplace",
+  "owner": { "name": "Sanath" },
+  "plugins": [
+    {
+      "name": "clarify",
+      "source": "./",
+      "description": "Scored clarifying questions before building a feature or fixing a bug."
+    }
+  ]
+}
